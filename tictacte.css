@@ -1,0 +1,56 @@
+.container{
+    z-index: 2;
+    /*background-color: green;*/
+    width: 1350px;
+    height: 1350px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-grow: 1;
+    /*background-color: blue ;*/
+}
+.gameBoard{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.btn{
+    flex-grow: 1;
+    margin: 5px;
+    font-size: 5em ;
+    font-weight: bold;
+    width: 90px;
+    height: 90px;
+}
+.title{
+    font-size: 1.8em;
+    text-align: center;
+    color: red;
+}
+.controls{
+    position: absolute;
+    top: 900px;
+    width: 100%;
+    text-align: center;
+}
+.xbtn{
+    color: red;
+
+}
+.obtn{
+    color: black;
+}
+/*<style>*/
+/**{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/* }*/
+/*.backGround-image{*/
+/*    background-image: url("https://play.google.com/store/apps/details?id=weplay.vn.caro.xogame&hl=en_US&gl=US");*/
+/*    background-repeat: no-repeat ;*/
+/*    background-size: 100%;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*}*/
+/*</style>*/
