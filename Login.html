@@ -5,13 +5,27 @@
     <title>Title</title>
 </head>
 <body>
-<form id="form" ></form>
+
+<form id="form_id">
     <table>
+
+        <td style="width: 20px; height: 20px"></td>
         Tên đăng nhập<input type="text" id="User"></br>
-        Mật khẩu     <input type="password" id="Passwword"></br>
-
+        Mật khẩu <input type="password" id="Passwword"></br>
     </table>
-    <button id="login">Đăng nhập</button>
-
+    <button id="login" onclick="login()">Đăng nhập</button>
+</form>
+<script>
+    function login() {
+        let a = document.getElementById("User").value;
+        let b = document.getElementById("Passwword").value;
+        if (a == 'Quang113' && b == '31052011') {
+            alert("Bạn đã đăng nhập thành công");
+            document.getElementById("form_id").action = "Tic_Tac_Te.html";
+            document.getElementById("form_id").onsubmit;
+        }
+    }
+</script>
 </body>
+
 </html>

@@ -24,25 +24,4 @@ for (const element of btns){
     turn=true;
     clickCount=0;
 }
-// check rows
 
-// while(toadoX - 1 >= 0 && data[toadoX - 1][toadoY] == con cờ hiện tại)
-// {
-//     countRow ++;
-//     toadoX  --;
-// }
-// while(  toadoX +1 <= 14 && data[ toadoX + 1][ toadoY ] ==  con cờ hiện tại )
-// {
-//     countRow ++;
-//     toadoX  ++;
-// }
-function login(){
-    let a=document.getElementById("User").value;
-    let b=document.getElementById("Passwword").value;
-    if (a==Quang113 ){
-        if (b=31052011){
-         <form action="Tic_Tac_Te.html"></form>;
-        }
-    }
-}
-login()
