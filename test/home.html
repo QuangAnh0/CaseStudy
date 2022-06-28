@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Tictaktoe</title>
-    <script src=""
     <style>
         table {
             border: solid black 1px;
+            border-collapse: collapse;
+
         }
 
         td, tr {
             border: solid blueviolet 1px;
+
         }
+
     </style>
+
+    <link rel="stylesheet" href="../co_caro.css">
 </head>
 <body>
-<form>
-    <label for="txt_size">Size</label>
-    <input type="number" id="txt_size" placeholder="Input size">
-    <label for="cbx">Check</label>
-    <input type="checkbox" id="cbx">
-    <button id="btn_start" onclick="start()">Start</button>
-</form>
-
+    <div id="div" style="justify-content: center;width: 100%; text-align: center"  >
+    <form>
+        <label for="txt_size">Size</label>
+        <input type="number" id="txt_size" placeholder="Input size">
+        <label for="cbx">Check</label>
+        <input type="checkbox" id="cbx">
+        <button id="btn_start" onclick="start()">Start</button>
+    </form>
+    </div>
 </body>
 </html>
+<script src="../js.co_caro.js"></script>

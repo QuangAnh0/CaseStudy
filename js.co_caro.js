@@ -7,11 +7,10 @@
     function start() {
     let sizeDoc = document.getElementById("txt_size");
     let conditionDoc = document.getElementById("cbx");
-    if (sizeDoc.value < 10 || sizeDoc.value > 100) {
-    alert('Size is not valid.')
-} else {
+//     if (sizeDoc.value < 10 || sizeDoc.value > 100) {
+//     alert('Size is not valid.')
+// } else {
     initBoard(sizeDoc.value, conditionDoc.value);
-}
 }
 
     function initBoard(inputSize, inputCondition) {
@@ -35,12 +34,13 @@
     str += '</table>';
     console.log(str);
 
-    document.getElementsByTagName("body")[0].innerHTML = str;
+    // document.getElementsByTagName("div")[0].innerHTML = str;
+        document.getElementById("div").innerHTML = str
 }
 
     function play(i, j) {
     console.log(boardArr);
-    let display = player ? 'X' : 'O';
+    let display = player ? "X" : 'O';
     let current = boardArr[i][j];
     let winArr = [];
     if (current == '') {
@@ -182,8 +182,12 @@
     // for (let item in winArr) {
     //     document.getElementById('td' + item[0] + '_' + item[1]).body.style.backgroundColor = 'blue';
     // }
+        if (player){
+            alert("Winner is O");
+        }else {
+            alert("Winner is X");
+        }
 
-    alert("End game");
     reset();
 
 }
